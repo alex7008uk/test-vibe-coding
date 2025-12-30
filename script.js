@@ -91,14 +91,14 @@ function renderExperiences() {
 function renderCourses() {
     const coursesGrid = document.getElementById('coursesGrid');
 
-    // 定義巴洛克風格漸層色組合
+    // 定義漸層色組合
     const gradients = [
-        'linear-gradient(135deg, #6B1F3C 0%, #8B0000 100%)',
-        'linear-gradient(135deg, #8B0000 0%, #4A2511 100%)',
-        'linear-gradient(135deg, #4A2511 0%, #6B1F3C 100%)',
-        'linear-gradient(135deg, #6B1F3C 0%, #2C1810 100%)',
-        'linear-gradient(135deg, #8B0000 0%, #6B1F3C 100%)',
-        'linear-gradient(135deg, #4A2511 0%, #8B0000 100%)'
+        'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+        'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
+        'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)',
+        'linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)',
+        'linear-gradient(135deg, #fa709a 0%, #fee140 100%)',
+        'linear-gradient(135deg, #30cfd0 0%, #330867 100%)'
     ];
 
     courses.forEach((course, index) => {
@@ -179,9 +179,9 @@ function initNavbarScroll() {
         const currentScroll = window.pageYOffset;
 
         if (currentScroll > 100) {
-            navbar.style.boxShadow = '0 8px 24px rgba(0, 0, 0, 0.6)';
+            navbar.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.15)';
         } else {
-            navbar.style.boxShadow = '0 8px 16px rgba(0, 0, 0, 0.4)';
+            navbar.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.1)';
         }
 
         lastScroll = currentScroll;
@@ -203,8 +203,7 @@ document.addEventListener('DOMContentLoaded', () => {
         initScrollAnimations();
     }, 100);
 
-    console.log('✅ 巴洛克風格網站已成功載入！');
+    console.log('✅ 網站已成功載入！');
     console.log(`📚 共載入 ${experiences.length} 項經歷`);
     console.log(`🎓 共載入 ${courses.length} 門課程`);
-    console.log('🎨 風格：華麗巴洛克');
 });

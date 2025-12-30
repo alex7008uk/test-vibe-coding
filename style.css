@@ -6,45 +6,21 @@
 }
 
 :root {
-    --primary-color: #C9A961;
-    --secondary-color: #8B0000;
-    --accent-color: #DAA520;
-    --text-color: #2C1810;
-    --light-bg: #F5E6D3;
-    --white: #FFF8E7;
-    --dark-bg: #1A0F0A;
-    --burgundy: #6B1F3C;
-    --gold: #FFD700;
-    --shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
-    --shadow-lg: 0 12px 40px rgba(0, 0, 0, 0.6);
-    --border-ornate: 3px solid #C9A961;
+    --primary-color: #3498db;
+    --secondary-color: #2c3e50;
+    --accent-color: #e74c3c;
+    --text-color: #333;
+    --light-bg: #f8f9fa;
+    --white: #ffffff;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
 body {
-    font-family: 'Crimson Text', 'Noto Serif TC', 'Georgia', 'Times New Roman', serif;
-    line-height: 1.8;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Microsoft JhengHei', 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
     color: var(--text-color);
-    background: linear-gradient(135deg, #2C1810 0%, #4A2511 50%, #2C1810 100%);
-    background-attachment: fixed;
-    position: relative;
-}
-
-body::before {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image:
-        repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(201, 169, 97, 0.03) 2px, rgba(201, 169, 97, 0.03) 4px);
-    pointer-events: none;
-    z-index: 1;
-}
-
-body > * {
-    position: relative;
-    z-index: 2;
+    background-color: var(--white);
 }
 
 .container {
@@ -55,14 +31,12 @@ body > * {
 
 /* ==================== 導航列 ==================== */
 .navbar {
-    background: linear-gradient(180deg, #1A0F0A 0%, #2C1810 100%);
+    background-color: var(--white);
     box-shadow: var(--shadow);
     position: sticky;
     top: 0;
     z-index: 1000;
-    padding: 1.5rem 0;
-    border-bottom: var(--border-ornate);
-    border-top: 4px double var(--gold);
+    padding: 1rem 0;
 }
 
 .navbar .container {
@@ -72,147 +46,82 @@ body > * {
 }
 
 .logo {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bold;
-    color: var(--gold);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-    font-family: 'Cinzel Decorative', 'Noto Serif TC', serif;
-    letter-spacing: 2px;
+    color: var(--primary-color);
 }
 
 .nav-links {
     display: flex;
     list-style: none;
-    gap: 2.5rem;
+    gap: 2rem;
 }
 
 .nav-links a {
     text-decoration: none;
-    color: var(--primary-color);
-    font-weight: 600;
-    transition: all 0.3s ease;
-    font-size: 1.1rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    border-bottom: 2px solid transparent;
-    padding-bottom: 4px;
+    color: var(--text-color);
+    font-weight: 500;
+    transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
-    color: var(--gold);
-    border-bottom: 2px solid var(--gold);
-    text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+    color: var(--primary-color);
 }
 
 /* ==================== 英雄區塊 ==================== */
 .hero {
-    background:
-        radial-gradient(ellipse at center, rgba(139, 0, 0, 0.3) 0%, transparent 70%),
-        linear-gradient(135deg, #6B1F3C 0%, #8B0000 50%, #4A2511 100%);
-    color: var(--gold);
-    padding: 140px 0;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: var(--white);
+    padding: 120px 0;
     text-align: center;
-    position: relative;
-    border-top: 5px double var(--gold);
-    border-bottom: 5px double var(--gold);
-}
-
-.hero::before {
-    content: '◆';
-    position: absolute;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 2rem;
-    color: var(--gold);
-}
-
-.hero::after {
-    content: '◆';
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 2rem;
-    color: var(--gold);
 }
 
 .hero-content {
     animation: fadeInUp 1s ease;
-    padding: 2rem;
-    max-width: 900px;
-    margin: 0 auto;
 }
 
 .hero-title {
-    font-size: 4rem;
-    margin-bottom: 1.5rem;
+    font-size: 3rem;
+    margin-bottom: 1rem;
     font-weight: 700;
-    font-family: 'Cinzel Decorative', 'Noto Serif TC', serif;
-    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8);
-    letter-spacing: 3px;
-    color: var(--gold);
 }
 
 .hero-subtitle {
-    font-size: 1.5rem;
-    margin-bottom: 2.5rem;
-    opacity: 0.95;
-    color: var(--primary-color);
-    font-style: italic;
-    letter-spacing: 2px;
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
 }
 
 .cta-button {
     display: inline-block;
-    padding: 18px 50px;
-    background: linear-gradient(135deg, var(--accent-color) 0%, var(--gold) 100%);
-    color: var(--dark-bg);
+    padding: 15px 40px;
+    background-color: var(--accent-color);
+    color: var(--white);
     text-decoration: none;
-    border: 3px solid var(--gold);
-    font-weight: 700;
+    border-radius: 50px;
+    font-weight: 600;
     transition: all 0.3s ease;
     box-shadow: var(--shadow);
-    font-size: 1.2rem;
-    letter-spacing: 2px;
-    text-transform: uppercase;
 }
 
 .cta-button:hover {
-    transform: translateY(-3px) scale(1.05);
-    box-shadow: 0 0 30px rgba(255, 215, 0, 0.6), var(--shadow-lg);
-    background: linear-gradient(135deg, var(--gold) 0%, var(--accent-color) 100%);
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-lg);
 }
 
 /* ==================== 經歷區塊 ==================== */
 .about {
-    padding: 100px 0;
-    background:
-        linear-gradient(180deg, rgba(201, 169, 97, 0.05) 0%, transparent 50%, rgba(201, 169, 97, 0.05) 100%),
-        var(--light-bg);
-    position: relative;
+    padding: 80px 0;
+    background-color: var(--light-bg);
 }
 
 .section-title {
     text-align: center;
-    font-size: 3rem;
-    margin-bottom: 4rem;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
     color: var(--secondary-color);
     position: relative;
-    padding: 2rem 0;
-    font-family: 'Cinzel Decorative', 'Noto Serif TC', serif;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-}
-
-.section-title::before {
-    content: '❖';
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 2rem;
-    color: var(--gold);
+    padding-bottom: 1rem;
 }
 
 .section-title::after {
@@ -221,9 +130,10 @@ body > * {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 200px;
-    height: 3px;
-    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+    width: 80px;
+    height: 4px;
+    background-color: var(--primary-color);
+    border-radius: 2px;
 }
 
 .about-content {
@@ -232,208 +142,120 @@ body > * {
 }
 
 .experience-item {
-    background: linear-gradient(135deg, rgba(255, 248, 231, 0.95) 0%, rgba(245, 230, 211, 0.95) 100%);
-    padding: 2.5rem;
-    margin-bottom: 2rem;
-    border: var(--border-ornate);
-    border-radius: 0;
+    background: var(--white);
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+    border-radius: 10px;
     box-shadow: var(--shadow);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     animation: fadeIn 0.6s ease;
-    position: relative;
-}
-
-.experience-item::before,
-.experience-item::after {
-    content: '◈';
-    position: absolute;
-    color: var(--primary-color);
-    font-size: 1.5rem;
-    opacity: 0.6;
-}
-
-.experience-item::before {
-    top: 15px;
-    left: 15px;
-}
-
-.experience-item::after {
-    bottom: 15px;
-    right: 15px;
 }
 
 .experience-item:hover {
     transform: translateY(-5px);
     box-shadow: var(--shadow-lg);
-    border-color: var(--gold);
 }
 
 .experience-title {
-    font-size: 1.8rem;
-    color: var(--secondary-color);
-    margin-bottom: 0.8rem;
-    font-family: 'Cinzel', 'Noto Serif TC', serif;
-    font-weight: bold;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
 }
 
 .experience-period {
-    color: var(--burgundy);
-    font-size: 1rem;
-    margin-bottom: 1.2rem;
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
     font-style: italic;
-    font-weight: 600;
 }
 
 .experience-description {
     color: var(--text-color);
-    line-height: 2;
-    font-size: 1.05rem;
+    line-height: 1.8;
 }
 
 /* ==================== 課程區塊 ==================== */
 .courses {
-    padding: 100px 0;
-    background:
-        radial-gradient(circle at top, rgba(139, 0, 0, 0.1) 0%, transparent 60%),
-        linear-gradient(180deg, #2C1810 0%, #1A0F0A 100%);
-}
-
-.courses .section-title {
-    color: var(--gold);
+    padding: 80px 0;
+    background-color: var(--white);
 }
 
 .courses-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 2.5rem;
-    margin-top: 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
 }
 
 .course-card {
-    background: linear-gradient(135deg, rgba(255, 248, 231, 0.98) 0%, rgba(245, 230, 211, 0.98) 100%);
-    border: 4px double var(--primary-color);
-    border-radius: 0;
+    background: var(--white);
+    border-radius: 15px;
     overflow: hidden;
     box-shadow: var(--shadow);
-    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     animation: fadeInUp 0.6s ease;
-    position: relative;
-}
-
-.course-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 4px;
-    background: linear-gradient(90deg, transparent, var(--gold), transparent);
 }
 
 .course-card:hover {
-    transform: translateY(-10px) scale(1.02);
-    box-shadow: 0 0 40px rgba(201, 169, 97, 0.4), var(--shadow-lg);
-    border-color: var(--gold);
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-lg);
 }
 
 .course-image {
     width: 100%;
-    height: 220px;
-    background: linear-gradient(135deg, #6B1F3C 0%, #8B0000 100%);
+    height: 200px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--gold);
-    font-size: 5rem;
-    border-bottom: 3px solid var(--gold);
-    position: relative;
-}
-
-.course-image::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80%;
-    height: 2px;
-    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+    color: var(--white);
+    font-size: 4rem;
 }
 
 .course-content {
-    padding: 2rem;
-    background: linear-gradient(180deg, rgba(255, 248, 231, 1) 0%, rgba(245, 230, 211, 1) 100%);
+    padding: 1.5rem;
 }
 
 .course-title {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     color: var(--secondary-color);
-    margin-bottom: 1rem;
-    font-family: 'Cinzel', 'Noto Serif TC', serif;
-    font-weight: bold;
-    text-align: center;
-    border-bottom: 2px solid var(--primary-color);
-    padding-bottom: 0.5rem;
+    margin-bottom: 0.8rem;
 }
 
 .course-description {
-    color: var(--text-color);
-    margin-bottom: 1.5rem;
-    line-height: 1.9;
-    font-size: 1.05rem;
-    text-align: justify;
+    color: #666;
+    margin-bottom: 1rem;
+    line-height: 1.6;
 }
 
 .course-meta {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 1.2rem;
-    border-top: 2px solid var(--primary-color);
+    padding-top: 1rem;
+    border-top: 1px solid #eee;
 }
 
 .course-duration,
 .course-level {
-    font-size: 1rem;
-    color: var(--burgundy);
-    font-weight: 600;
+    font-size: 0.9rem;
+    color: #888;
 }
 
 .course-level {
-    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
-    padding: 6px 16px;
-    border-radius: 0;
-    font-weight: 700;
-    color: var(--dark-bg);
-    border: 2px solid var(--gold);
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    background-color: var(--light-bg);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-weight: 500;
 }
 
 /* ==================== 頁腳 ==================== */
 .footer {
-    background: linear-gradient(180deg, #1A0F0A 0%, #0F0806 100%);
-    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    color: var(--white);
     text-align: center;
-    padding: 3rem 0;
-    margin-top: 0;
-    border-top: 5px double var(--gold);
-    position: relative;
-}
-
-.footer::before {
-    content: '◆ ◆ ◆';
-    display: block;
-    margin-bottom: 1rem;
-    color: var(--gold);
-    font-size: 1.2rem;
-    letter-spacing: 1rem;
-}
-
-.footer p {
-    font-size: 1.1rem;
-    letter-spacing: 2px;
-    font-style: italic;
+    padding: 2rem 0;
+    margin-top: 4rem;
 }
 
 /* ==================== 動畫效果 ==================== */
