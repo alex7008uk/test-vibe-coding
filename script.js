@@ -27,7 +27,7 @@ const courses = [
     {
         title: '向上管理Managing Up成功輔佐上司',
         description: '學習如何有效輔佐上司，建立良好的向上溝通管道，提升職場影響力與工作效能。',
-        icon: '👔',
+        image: 'images/向上管理Managing Up成功輔佐上司.png',
         sessions: [
             {
                 batch: '第一梯次',
@@ -46,7 +46,7 @@ const courses = [
     {
         title: '企業流程標準化SOP建立與改善實務',
         description: '系統化學習標準作業流程的建立、優化與改善方法，提升企業營運效率與品質管理能力。',
-        icon: '📋',
+        image: 'images/企業流程標準化SOP建立與改善實務.png',
         sessions: [
             {
                 batch: '第一梯次',
@@ -65,7 +65,7 @@ const courses = [
     {
         title: '危機管理的原則與案例分享訓練',
         description: '透過實際案例分析，學習危機預防、應對與處理的關鍵技巧，強化組織韌性與應變能力。',
-        icon: '🚨',
+        image: 'images/危機管理的原則與案例分享訓練.png',
         sessions: [
             {
                 batch: '第一梯次',
@@ -84,7 +84,7 @@ const courses = [
     {
         title: '簡報技巧與口才訓練',
         description: '掌握專業簡報技巧與口語表達能力，提升說服力與個人魅力，成為職場溝通高手。',
-        icon: '🎤',
+        image: 'images/簡報技巧與口才訓練.png',
         sessions: [
             {
                 batch: '第一梯次',
@@ -103,7 +103,7 @@ const courses = [
     {
         title: '企業數位轉型策略展開實務',
         description: '深入了解數位轉型的核心策略與執行方法，協助企業掌握數位浪潮，開創新商業模式。',
-        icon: '💡',
+        image: 'images/企業數位轉型策略展開實務.png',
         sessions: [
             {
                 batch: '第一梯次',
@@ -122,7 +122,7 @@ const courses = [
     {
         title: '賽局理論－研究策略性互動的思考框架',
         description: '運用賽局理論分析競爭態勢，學習策略思維與決策技巧，提升商業判斷力。',
-        icon: '🎯',
+        image: 'images/賽局理論－研究策略性互動的思考框架.png',
         sessions: [
             {
                 batch: '第一梯次',
@@ -141,7 +141,7 @@ const courses = [
     {
         title: '風險分析與危機管理培訓',
         description: '建立完整的風險識別與評估機制，強化危機處理能力，確保企業永續經營。',
-        icon: '⚠️',
+        image: 'images/風險分析與危機管理培訓.png',
         sessions: [
             {
                 batch: '第一梯次',
@@ -160,7 +160,7 @@ const courses = [
     {
         title: '企業運用人工智慧和大數據分析實務',
         description: '學習AI與大數據的實際應用，掌握數據驅動決策的關鍵技術，提升企業競爭優勢。',
-        icon: '🤖',
+        image: 'images/企業運用人工智慧和大數據分析實務.png',
         sessions: [
             {
                 batch: '第一梯次',
@@ -201,18 +201,6 @@ function renderExperiences() {
 function renderCourses() {
     const coursesGrid = document.getElementById('coursesGrid');
 
-    // 定義漸層色組合
-    const gradients = [
-        'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-        'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
-        'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)',
-        'linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)',
-        'linear-gradient(135deg, #fa709a 0%, #fee140 100%)',
-        'linear-gradient(135deg, #30cfd0 0%, #330867 100%)',
-        'linear-gradient(135deg, #a8edea 0%, #fed6e3 100%)',
-        'linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%)'
-    ];
-
     courses.forEach((course, index) => {
         const courseCard = document.createElement('div');
         courseCard.className = 'course-card';
@@ -233,8 +221,8 @@ function renderCourses() {
         `).join('');
 
         courseCard.innerHTML = `
-            <div class="course-image" style="background: ${gradients[index % gradients.length]}">
-                ${course.icon}
+            <div class="course-image">
+                <img src="${course.image}" alt="${course.title}" />
             </div>
             <div class="course-content">
                 <h3 class="course-title">${course.title}</h3>
