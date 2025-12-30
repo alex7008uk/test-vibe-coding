@@ -227,26 +227,33 @@ body {
 
 .course-content {
     padding: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    flex: 1; /* 讓內容區域填滿剩餘空間 */
 }
 
 .course-title {
     font-size: 1.4rem;
     color: var(--secondary-color);
     margin-bottom: 0.8rem;
+    height: 3.4rem; /* 固定標題高度為兩行 */
+    line-height: 1.7rem;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
 }
 
 .course-description {
     color: #666;
     margin-bottom: 1rem;
     line-height: 1.6;
-    flex-grow: 1; /* 讓描述區域自動擴展，推送梯次資訊到底部對齊 */
+    height: 4.8rem; /* 固定描述高度為三行 */
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
 }
 
 .course-sessions {
-    margin-top: auto; /* 自動推到底部 */
+    margin-top: 1.5rem;
 }
 
 .session-item {
