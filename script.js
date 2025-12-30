@@ -25,46 +25,156 @@ const experiences = [
 // ==================== 課程資料 ====================
 const courses = [
     {
-        title: 'JavaScript 基礎入門',
-        description: '從零開始學習 JavaScript，涵蓋變數、函式、物件導向等核心概念，適合完全沒有程式基礎的初學者。',
-        duration: '8 週',
-        level: '初級',
-        icon: '📚'
+        title: '向上管理Managing Up成功輔佐上司',
+        description: '學習如何有效輔佐上司，建立良好的向上溝通管道，提升職場影響力與工作效能。',
+        icon: '👔',
+        sessions: [
+            {
+                batch: '第一梯次',
+                date: '01/06(二)',
+                time: '09:30~16:30',
+                url: 'https://store.cpc.org.tw/Train/Contents/TC8645'
+            },
+            {
+                batch: '第二梯次',
+                date: '07/01(三)',
+                time: '09:30~16:30',
+                url: 'https://store.cpc.org.tw/Train/Contents/TC8646'
+            }
+        ]
     },
     {
-        title: 'React 前端開發',
-        description: '深入學習 React 框架，包括組件設計、狀態管理、Hooks 使用等進階技巧，打造現代化的單頁應用程式。',
-        duration: '12 週',
-        level: '中級',
-        icon: '⚛️'
+        title: '企業流程標準化SOP建立與改善實務',
+        description: '系統化學習標準作業流程的建立、優化與改善方法，提升企業營運效率與品質管理能力。',
+        icon: '📋',
+        sessions: [
+            {
+                batch: '第一梯次',
+                date: '03/06(五)',
+                time: '09:30~16:30',
+                url: 'https://store.cpc.org.tw/Train/Contents/TC8648'
+            },
+            {
+                batch: '第二梯次',
+                date: '08/06(四)',
+                time: '09:30~16:30',
+                url: 'https://store.cpc.org.tw/Train/Contents/TC8649'
+            }
+        ]
     },
     {
-        title: '響應式網頁設計',
-        description: '掌握 RWD 設計原則，學習使用 Flexbox、Grid 等現代 CSS 技術，創建適配各種裝置的網頁介面。',
-        duration: '6 週',
-        level: '初級',
-        icon: '📱'
+        title: '危機管理的原則與案例分享訓練',
+        description: '透過實際案例分析，學習危機預防、應對與處理的關鍵技巧，強化組織韌性與應變能力。',
+        icon: '🚨',
+        sessions: [
+            {
+                batch: '第一梯次',
+                date: '03/31(二)',
+                time: '09:30~16:30',
+                url: 'https://store.cpc.org.tw/Train/Contents/TC8658'
+            },
+            {
+                batch: '第二梯次',
+                date: '07/21(二)',
+                time: '09:30~16:30',
+                url: 'https://store.cpc.org.tw/Train/Contents/TC8659'
+            }
+        ]
     },
     {
-        title: 'Node.js 後端開發',
-        description: '學習使用 Node.js 建立後端 API，包括資料庫操作、身份驗證、RESTful API 設計等實用技能。',
-        duration: '10 週',
-        level: '中級',
-        icon: '🚀'
+        title: '簡報技巧與口才訓練',
+        description: '掌握專業簡報技巧與口語表達能力，提升說服力與個人魅力，成為職場溝通高手。',
+        icon: '🎤',
+        sessions: [
+            {
+                batch: '第一梯次',
+                date: '04/10(五)',
+                time: '09:30~16:30',
+                url: 'https://store.cpc.org.tw/Train/Contents/TC8671'
+            },
+            {
+                batch: '第二梯次',
+                date: '08/18(二)',
+                time: '09:30~16:30',
+                url: 'https://store.cpc.org.tw/Train/Contents/TC8674'
+            }
+        ]
     },
     {
-        title: '全端專案實戰',
-        description: '結合前後端技術，從需求分析到部署上線，完整打造一個真實的全端應用程式專案。',
-        duration: '16 週',
-        level: '高級',
-        icon: '💻'
+        title: '企業數位轉型策略展開實務',
+        description: '深入了解數位轉型的核心策略與執行方法，協助企業掌握數位浪潮，開創新商業模式。',
+        icon: '💡',
+        sessions: [
+            {
+                batch: '第一梯次',
+                date: '04/29(三)',
+                time: '09:30~16:30',
+                url: 'https://store.cpc.org.tw/Train/Contents/TC8652'
+            },
+            {
+                batch: '第二梯次',
+                date: '09/02(三)',
+                time: '09:30~16:30',
+                url: 'https://store.cpc.org.tw/Train/Contents/TC8653'
+            }
+        ]
     },
     {
-        title: 'Git 版本控制',
-        description: '學習 Git 的核心概念與團隊協作流程，掌握分支管理、衝突解決等實用技巧。',
-        duration: '4 週',
-        level: '初級',
-        icon: '🔧'
+        title: '賽局理論－研究策略性互動的思考框架',
+        description: '運用賽局理論分析競爭態勢，學習策略思維與決策技巧，提升商業判斷力。',
+        icon: '🎯',
+        sessions: [
+            {
+                batch: '第一梯次',
+                date: '05/05(二)',
+                time: '09:30~16:30',
+                url: 'https://store.cpc.org.tw/Train/Contents/TC8681'
+            },
+            {
+                batch: '第二梯次',
+                date: '10/30(五)',
+                time: '09:30~16:30',
+                url: 'https://store.cpc.org.tw/Train/Contents/TC8682'
+            }
+        ]
+    },
+    {
+        title: '風險分析與危機管理培訓',
+        description: '建立完整的風險識別與評估機制，強化危機處理能力，確保企業永續經營。',
+        icon: '⚠️',
+        sessions: [
+            {
+                batch: '第一梯次',
+                date: '05/26(二)',
+                time: '09:30~16:30',
+                url: 'https://store.cpc.org.tw/Train/Contents/TC8654'
+            },
+            {
+                batch: '第二梯次',
+                date: '10/02(五)',
+                time: '09:30~16:30',
+                url: 'https://store.cpc.org.tw/Train/Contents/TC8655'
+            }
+        ]
+    },
+    {
+        title: '企業運用人工智慧和大數據分析實務',
+        description: '學習AI與大數據的實際應用，掌握數據驅動決策的關鍵技術，提升企業競爭優勢。',
+        icon: '🤖',
+        sessions: [
+            {
+                batch: '第一梯次',
+                date: '06/10(三)',
+                time: '09:30~16:30',
+                url: 'https://store.cpc.org.tw/Train/Contents/TC8656'
+            },
+            {
+                batch: '第二梯次',
+                date: '11/11(三)',
+                time: '09:30~16:30',
+                url: 'https://store.cpc.org.tw/Train/Contents/TC8657'
+            }
+        ]
     }
 ];
 
@@ -98,13 +208,29 @@ function renderCourses() {
         'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)',
         'linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)',
         'linear-gradient(135deg, #fa709a 0%, #fee140 100%)',
-        'linear-gradient(135deg, #30cfd0 0%, #330867 100%)'
+        'linear-gradient(135deg, #30cfd0 0%, #330867 100%)',
+        'linear-gradient(135deg, #a8edea 0%, #fed6e3 100%)',
+        'linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%)'
     ];
 
     courses.forEach((course, index) => {
         const courseCard = document.createElement('div');
         courseCard.className = 'course-card';
         courseCard.style.animationDelay = `${index * 0.1}s`;
+
+        // 生成梯次資訊 HTML
+        const sessionsHTML = course.sessions.map(session => `
+            <div class="session-item">
+                <div class="session-header">
+                    <span class="session-batch">${session.batch}</span>
+                    <span class="session-date">📅 ${session.date}</span>
+                </div>
+                <div class="session-details">
+                    <span class="session-time">⏰ ${session.time}</span>
+                    <a href="${session.url}" target="_blank" class="session-link">立即報名</a>
+                </div>
+            </div>
+        `).join('');
 
         courseCard.innerHTML = `
             <div class="course-image" style="background: ${gradients[index % gradients.length]}">
@@ -113,9 +239,8 @@ function renderCourses() {
             <div class="course-content">
                 <h3 class="course-title">${course.title}</h3>
                 <p class="course-description">${course.description}</p>
-                <div class="course-meta">
-                    <span class="course-duration">⏱️ ${course.duration}</span>
-                    <span class="course-level">${course.level}</span>
+                <div class="course-sessions">
+                    ${sessionsHTML}
                 </div>
             </div>
         `;

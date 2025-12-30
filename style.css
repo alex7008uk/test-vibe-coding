@@ -228,25 +228,70 @@ body {
     line-height: 1.6;
 }
 
-.course-meta {
+.course-sessions {
+    margin-top: 1.5rem;
+}
+
+.session-item {
+    background-color: var(--light-bg);
+    padding: 1rem;
+    margin-bottom: 0.8rem;
+    border-radius: 8px;
+    border-left: 4px solid var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+.session-item:hover {
+    background-color: #e8f4f8;
+    transform: translateX(5px);
+}
+
+.session-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 1rem;
-    border-top: 1px solid #eee;
+    margin-bottom: 0.6rem;
 }
 
-.course-duration,
-.course-level {
+.session-batch {
+    font-weight: 600;
+    color: var(--primary-color);
+    font-size: 0.95rem;
+}
+
+.session-date {
+    color: var(--text-color);
     font-size: 0.9rem;
-    color: #888;
 }
 
-.course-level {
-    background-color: var(--light-bg);
-    padding: 4px 12px;
+.session-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.session-time {
+    color: #666;
+    font-size: 0.85rem;
+}
+
+.session-link {
+    background-color: var(--accent-color);
+    color: var(--white);
+    padding: 6px 16px;
     border-radius: 20px;
-    font-weight: 500;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.session-link:hover {
+    background-color: #c0392b;
+    transform: scale(1.05);
+    box-shadow: 0 2px 8px rgba(231, 76, 60, 0.3);
 }
 
 /* ==================== 頁腳 ==================== */
@@ -360,6 +405,33 @@ body {
 
     .courses {
         padding: 40px 0;
+    }
+
+    /* 梯次資訊響應式調整 */
+    .session-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.3rem;
+    }
+
+    .session-details {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    .session-link {
+        width: 100%;
+        text-align: center;
+        padding: 8px 16px;
+    }
+
+    .course-title {
+        font-size: 1.2rem;
+    }
+
+    .course-description {
+        font-size: 0.9rem;
     }
 }
 
