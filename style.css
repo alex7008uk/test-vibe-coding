@@ -150,6 +150,47 @@ body {
     margin: 0 auto;
 }
 
+.instructor-profile {
+    background: var(--white);
+    padding: 3rem;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+    max-width: 900px;
+    margin: 0 auto;
+    animation: fadeIn 0.6s ease;
+}
+
+.instructor-profile h3 {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid var(--light-bg);
+}
+
+.instructor-profile h4 {
+    font-size: 1.3rem;
+    color: var(--secondary-color);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.instructor-profile p {
+    color: var(--text-color);
+    line-height: 1.8;
+    margin-bottom: 0.8rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.instructor-profile p::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
 .experience-item {
     background: var(--white);
     padding: 2rem;

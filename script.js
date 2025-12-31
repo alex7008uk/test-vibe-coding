@@ -304,7 +304,7 @@ function initNavbarScroll() {
 // ==================== 初始化所有功能 ====================
 document.addEventListener('DOMContentLoaded', () => {
     // 生成內容
-    renderExperiences();
+    // renderExperiences(); // 已改為直接在 HTML 中顯示講師介紹
     renderCourses();
 
     // 初始化功能
