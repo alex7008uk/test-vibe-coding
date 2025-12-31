@@ -155,12 +155,36 @@ body {
     padding: 3rem;
     border-radius: 15px;
     box-shadow: var(--shadow);
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto;
     animation: fadeIn 0.6s ease;
+    display: flex;
+    gap: 3rem;
+    align-items: flex-start;
 }
 
-.instructor-profile h3 {
+.instructor-photo {
+    flex-shrink: 0;
+    width: 250px;
+}
+
+.instructor-photo img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.instructor-photo img:hover {
+    transform: scale(1.05);
+}
+
+.instructor-info {
+    flex: 1;
+}
+
+.instructor-info h3 {
     font-size: 1.8rem;
     color: var(--primary-color);
     margin-bottom: 1.5rem;
@@ -168,14 +192,14 @@ body {
     border-bottom: 2px solid var(--light-bg);
 }
 
-.instructor-profile h4 {
+.instructor-info h4 {
     font-size: 1.3rem;
     color: var(--secondary-color);
     margin-top: 2rem;
     margin-bottom: 1rem;
 }
 
-.instructor-profile p {
+.instructor-info p {
     color: var(--text-color);
     line-height: 1.8;
     margin-bottom: 0.8rem;
@@ -183,7 +207,7 @@ body {
     position: relative;
 }
 
-.instructor-profile p::before {
+.instructor-info p::before {
     content: '•';
     position: absolute;
     left: 0;
@@ -430,6 +454,17 @@ body {
     .courses {
         padding: 60px 0;
     }
+
+    .instructor-profile {
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+        padding: 2rem;
+    }
+
+    .instructor-photo {
+        width: 200px;
+    }
 }
 
 /* 手機 */
@@ -479,6 +514,22 @@ body {
 
     .courses {
         padding: 40px 0;
+    }
+
+    .instructor-profile {
+        padding: 1.5rem;
+    }
+
+    .instructor-photo {
+        width: 180px;
+    }
+
+    .instructor-info h3 {
+        font-size: 1.5rem;
+    }
+
+    .instructor-info h4 {
+        font-size: 1.1rem;
     }
 
     /* 梯次資訊響應式調整 */
