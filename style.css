@@ -77,6 +77,33 @@ body {
     color: var(--primary-color);
 }
 
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.contact-info {
+    font-size: 0.85rem;
+    color: #666;
+    line-height: 1.4;
+}
+
+.contact-info p {
+    margin: 0;
+}
+
+.contact-info a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
 /* ==================== 英雄區塊 ==================== */
 .hero {
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
@@ -225,7 +252,7 @@ body {
 .instructor-info p {
     color: var(--text-color);
     line-height: 1.9;
-    margin-bottom: 0.9rem;
+    margin-bottom: 0;
     padding-left: 2rem;
     position: relative;
     font-size: 1.05rem;
@@ -421,9 +448,50 @@ body {
 .footer {
     background-color: var(--secondary-color);
     color: var(--white);
-    text-align: center;
-    padding: 2rem 0;
+    padding: 2.5rem 0;
     margin-top: 4rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.footer-contact {
+    text-align: left;
+}
+
+.footer-contact p {
+    margin: 0.3rem 0;
+    font-size: 0.95rem;
+}
+
+.footer-contact strong {
+    font-size: 1.1rem;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.footer-contact a {
+    color: var(--white);
+    text-decoration: underline;
+    transition: opacity 0.3s ease;
+}
+
+.footer-contact a:hover {
+    opacity: 0.8;
+}
+
+.footer-copyright {
+    text-align: right;
+}
+
+.footer-copyright p {
+    margin: 0;
+    font-size: 0.9rem;
+    opacity: 0.9;
 }
 
 /* ==================== 動畫效果 ==================== */
@@ -490,6 +558,28 @@ body {
     .instructor-photo {
         width: 200px;
     }
+
+    .nav-right {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: flex-end;
+    }
+
+    .contact-info {
+        font-size: 0.75rem;
+        text-align: right;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 1.5rem;
+    }
+
+    .footer-contact,
+    .footer-copyright {
+        text-align: center;
+    }
 }
 
 /* 手機 */
@@ -511,9 +601,21 @@ body {
         gap: 1rem;
     }
 
+    .nav-right {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.8rem;
+    }
+
     .nav-links {
         gap: 0.8rem;
         font-size: 0.9rem;
+    }
+
+    .contact-info {
+        font-size: 0.7rem;
+        text-align: center;
     }
 
     .section-title {
