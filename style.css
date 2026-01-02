@@ -290,7 +290,8 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
     margin-top: 2rem;
-    align-items: stretch; /* 讓所有卡片高度一致 */
+    align-items: stretch;
+    /* 讓所有卡片高度一致 */
 }
 
 .course-card {
@@ -338,7 +339,8 @@ body {
     font-size: 1.4rem;
     color: var(--secondary-color);
     margin-bottom: 0.8rem;
-    height: 3.4rem; /* 固定標題高度為兩行 */
+    height: 3.4rem;
+    /* 固定標題高度為兩行 */
     line-height: 1.7rem;
     overflow: hidden;
     display: -webkit-box;
@@ -350,7 +352,8 @@ body {
     color: #666;
     margin-bottom: 1rem;
     line-height: 1.6;
-    height: 4.8rem; /* 固定描述高度為三行 */
+    height: 4.8rem;
+    /* 固定描述高度為三行 */
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 3;
@@ -478,6 +481,7 @@ body {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
@@ -488,6 +492,7 @@ body {
         opacity: 0;
         transform: translateY(30px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
