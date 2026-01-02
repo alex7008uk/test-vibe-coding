@@ -83,27 +83,6 @@ body {
     gap: 2rem;
 }
 
-.contact-info {
-    font-size: 0.85rem;
-    color: #666;
-    line-height: 1.4;
-}
-
-.contact-info p {
-    margin: 0;
-}
-
-.contact-info a {
-    color: var(--primary-color);
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.contact-info a:hover {
-    color: var(--secondary-color);
-    text-decoration: underline;
-}
-
 /* ==================== 英雄區塊 ==================== */
 .hero {
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
