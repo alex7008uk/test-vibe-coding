@@ -103,8 +103,15 @@ body {
 
 .hero-subtitle {
     font-size: 1.3rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     opacity: 0.9;
+}
+
+.hero-description {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    opacity: 0.85;
+    white-space: nowrap;
 }
 
 .cta-button {
@@ -534,6 +541,10 @@ body {
         font-size: 1.1rem;
     }
 
+    .hero-description {
+        font-size: 0.85rem;
+    }
+
     .section-title {
         font-size: 2rem;
     }
@@ -601,6 +612,11 @@ body {
 
     .hero-subtitle {
         font-size: 1rem;
+    }
+
+    .hero-description {
+        font-size: 0.95rem;
+        white-space: normal;
     }
 
     .navbar .container {
