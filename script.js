@@ -116,7 +116,7 @@ const courses = [
     sessions: [
       {
         batch: "第一梯次",
-        date: "04/29(三)",
+        date: "04/30(四)",
         time: "09:30~16:30",
         url: "https://store.cpc.org.tw/Train/Contents/TC8652",
       },
@@ -182,7 +182,7 @@ const courses = [
       },
       {
         batch: "第二梯次",
-        date: "11/11(三)",
+        date: "11/12(四)",
         time: "09:30~16:30",
         url: "https://store.cpc.org.tw/Train/Contents/TC8657",
       },
@@ -196,7 +196,7 @@ const courses = [
     sessions: [
       {
         batch: "第一梯次",
-        date: "05/13(三)",
+        date: "05/14(四)",
         time: "09:30~16:30",
         url: "https://store.cpc.org.tw/Train/Contents/TD4112",
       },
