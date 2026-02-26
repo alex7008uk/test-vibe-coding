@@ -228,7 +228,21 @@ const courses = [
       },
     ],
   },
-];
+  {
+    title: "中階主管管理才能研習班",
+    description:
+      "精準調配管理者「知」與「行」的比重。",
+    image: "images/中階主管管理才能.png",
+    sessions: [
+      {
+        batch: "第一梯次",
+        date: "06/26(五)",
+        time: "09:30~16:30",
+        url: "https://store.cpc.org.tw/Train/Contents/TD4837",
+      }
+    ]
+  }
+  ]
 
 // ==================== 生成經歷區塊 ====================
 function renderExperiences() {
